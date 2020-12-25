@@ -11,11 +11,7 @@
     "test:watch": "jest --watch",
     "lint": "gts lint",
     "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "yarn run compile",
-    "pretest": "yarn run compile",
-    "posttest": "yarn run lint"
+    "fix": "gts fix"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "5.11.6",
