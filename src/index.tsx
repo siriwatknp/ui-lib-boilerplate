@@ -4,6 +4,10 @@ export function greet(name: string) {
   return `Hello ${name}`;
 }
 
+export function getName(obj: { name: string } | undefined) {
+  return obj?.name;
+}
+
 export function Button({ children }: PropsWithChildren<{}>) {
   return <button>{children}</button>;
 }

@@ -3,11 +3,11 @@
 ### Project Setup
 - [x] Typescript
 - [x] jest
-- [ ] google typescript style
-- [ ] standard-version
-- [ ] husky
-- [ ] commit-lint
-- [ ] conventional-changelog
+- [x] google typescript style
+- [x] standard-version
+- [x] husky
+- [x] commit-lint
+- [x] conventional-changelog
 
 #### Development
 ```bash
@@ -32,5 +32,5 @@ yarn add -D @commitlint/cli @commitlint/config-conventional cz-conventional-chan
 
 #### Build & Publish
 ```bash
-yarn add -D @babel/cli standard-version
+yarn add -D rimraf @babel/cli standard-version
 ```
