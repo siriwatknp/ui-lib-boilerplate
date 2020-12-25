@@ -32,5 +32,5 @@ yarn add -D @commitlint/cli @commitlint/config-conventional cz-conventional-chan
 
 #### Build & Publish
 ```bash
-yarn add -D rimraf @babel/cli standard-version
+yarn add -D rimraf standard-version
 ```
