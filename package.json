@@ -14,7 +14,7 @@
     "fix": "gts fix",
     "build": "tsc -p tsconfig.build.json",
     "prebuild": "rimraf dist",
-    "release": "standard-version"
+    "release": "HUSKY_SKIP_HOOKS=1 standard-version -m 'chore(release): Release v%s :tada: [ci skip]'"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
