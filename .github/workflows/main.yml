@@ -35,9 +35,14 @@ jobs:
         run: yarn
       - name: Build
         run: yarn build
+      - name: Configure Git
+        run: |
+          git config --local user.email "ci@github.actions.com"
+          git config --local user.name "github actions service account"
+          git remote -v
       - name: Release
         run: yarn release
-      - run: git push origin main --follow-tags
+      - run: git push origin HEAD:main --follow-tags
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'

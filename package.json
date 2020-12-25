@@ -1,11 +1,14 @@
 {
-  "name": "ui-lib-boilerplate",
+  "name": "@siriwatknp/ui-lib-boilerplate",
   "version": "0.1.0",
   "description": "A boilerplate for building ui library and publish with Github actions + Github package",
   "main": "index.js",
-  "repository": "git@github.com:siriwatknp/ui-lib-boilerplate.git",
+  "repository": "git://github.com/siriwatknp/ui-lib-boilerplate.git",
   "author": "siriwatknp <siriwatkunaporn@gmail.com>",
   "license": "MIT",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "test": "jest --verbose",
     "test:watch": "jest --watch",
@@ -14,7 +17,7 @@
     "fix": "gts fix",
     "build": "tsc -p tsconfig.build.json",
     "prebuild": "rimraf dist",
-    "release": "HUSKY_SKIP_HOOKS=1 standard-version -m 'chore(release): Release v%s :tada: [ci skip]'"
+    "release": "HUSKY_SKIP_HOOKS=1 standard-version --releaseCommitMessageFormat 'chore(release): Release v%s :tada: [ci skip]'"
   },
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
