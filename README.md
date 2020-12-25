@@ -1,12 +1,13 @@
+[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
+
 ### Project Setup
-- [ ] Typescript
+- [x] Typescript
+- [x] jest
+- [ ] google typescript style
 - [ ] standard-version
 - [ ] husky
-- [ ] eslint
-- [ ] prettier
 - [ ] commit-lint
 - [ ] conventional-changelog
-- [ ] jest
 
 #### Development
 ```bash
@@ -21,6 +22,7 @@ yarn add -D react react-dom @types/react @types/react-dom @testing-library/react
 #### Code style
 ```bash
 npx gts init
+yarn add -D eslint-plugin-react
 ```
 
 #### Conventional Commit
